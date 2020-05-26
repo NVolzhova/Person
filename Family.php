@@ -30,7 +30,7 @@ class Person{
       $str = "My mother: ".$this->mother->name."<br>
               My father: ".$this->father->name."<br>
               My dad's father: ".$this->father->father->name."<br>
-              My dad's mother: ".$this->father->father->name."<br>
+              My dad's mother: ".$this->father->mother->name."<br>
               My mum's father: ".$this->mother->father->name."<br>
               My mum's mother: ".$this->mother->mother->name."<br>
               My child: ".$this->child->name."<br>";
