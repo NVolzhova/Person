@@ -38,15 +38,15 @@ class Person{
   }
 }
 
-$fedor = new Person ("Fedor","Ivanov",60,$alex);
-$maria = new Person ("Maria","Ivanova",58,$alex);
-$petr = new Person ("Peter","Petrov",59,$jula);
-$irina = new Person ("Irina","Petrova",55,$jula);
-$alex = new Person("Alex","Ivanov",36,$maria,$fedor,$lena,$olga,$igor);
-$jula = new Person("Jula","Ivanova",34,$irina,$petr,$lena,$olga,$igor);
-$lena = new Person ("Lena","Ivanova",12,$jula,$alex,$fedor,$petr,$maria,$irina);
-$olga = new Person("Olga","Ivanova",7,$jula,$alex,$fedor,$petr,$maria,$irina);
-$igor = new Person("Igor","Ivanov",3,$jula,$alex,$fedor,$petr,$maria,$irina);
+$fedor = new Person ("Fedor","Ivanov",60,null,null,null,null,$alex);
+$maria = new Person ("Maria","Ivanova",58,null,null,null,null,$alex);
+$petr = new Person ("Peter","Petrov",59,null,null,null,null,$jula);
+$irina = new Person ("Irina","Petrova",55,null,null,null,null,$jula);
+$alex = new Person("Alex","Ivanov",36,$maria,$fedor,null,null);
+$jula = new Person("Jula","Ivanova",34,$irina,$petr,null,null);
+$lena = new Person ("Lena","Ivanova",12,$jula,$alex);
+$olga = new Person("Olga","Ivanova",7,$jula,$alex);
+$igor = new Person("Igor","Ivanov",3,$jula,$alex);
 
 echo $lena->tellAboutYourParents();
 ?>
